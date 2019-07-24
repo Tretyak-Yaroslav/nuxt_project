@@ -10,9 +10,9 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_nuxticons_34e8d4c2 from 'nuxt_plugin_nuxticons_34e8d4c2' // Source: .\\nuxt-icons.js (mode: 'all')
-import nuxt_plugin_vuetify_e64c779e from 'nuxt_plugin_vuetify_e64c779e' // Source: .\\vuetify.js (mode: 'all')
-import nuxt_plugin_axios_e4160d6e from 'nuxt_plugin_axios_e4160d6e' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_nuxticons_60647a3a from 'nuxt_plugin_nuxticons_60647a3a' // Source: .\\nuxt-icons.js (mode: 'all')
+import nuxt_plugin_vuetify_74e59d76 from 'nuxt_plugin_vuetify_74e59d76' // Source: .\\vuetify.js (mode: 'all')
+import nuxt_plugin_axios_c97f4064 from 'nuxt_plugin_axios_c97f4064' // Source: .\\axios.js (mode: 'all')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -131,16 +131,16 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_nuxticons_34e8d4c2 === 'function') {
-    await nuxt_plugin_nuxticons_34e8d4c2(app.context, inject)
+  if (typeof nuxt_plugin_nuxticons_60647a3a === 'function') {
+    await nuxt_plugin_nuxticons_60647a3a(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_vuetify_e64c779e === 'function') {
-    await nuxt_plugin_vuetify_e64c779e(app.context, inject)
+  if (typeof nuxt_plugin_vuetify_74e59d76 === 'function') {
+    await nuxt_plugin_vuetify_74e59d76(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_e4160d6e === 'function') {
-    await nuxt_plugin_axios_e4160d6e(app.context, inject)
+  if (typeof nuxt_plugin_axios_c97f4064 === 'function') {
+    await nuxt_plugin_axios_c97f4064(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

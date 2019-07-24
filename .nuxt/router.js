@@ -2,13 +2,17 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _665cd6f8 = () => interopDefault(import('..\\pages\\admin\\index.vue' /* webpackChunkName: "pages_admin_index" */))
-const _967e08d6 = () => interopDefault(import('..\\pages\\inspire.vue' /* webpackChunkName: "pages_inspire" */))
-const _06489394 = () => interopDefault(import('..\\pages\\admin\\users\\index.vue' /* webpackChunkName: "pages_admin_users_index" */))
-const _9f632a08 = () => interopDefault(import('..\\pages\\admin\\users\\_id.vue' /* webpackChunkName: "pages_admin_users__id" */))
-const _1860ceea = () => interopDefault(import('..\\pages\\admin\\_test\\index.vue' /* webpackChunkName: "pages_admin__test_index" */))
-const _821f7c9a = () => interopDefault(import('..\\pages\\admin\\_test\\_id.vue' /* webpackChunkName: "pages_admin__test__id" */))
-const _a7b73b66 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
+const _dbb51f0a = () => interopDefault(import('..\\pages\\admin\\index.vue' /* webpackChunkName: "pages_admin_index" */))
+const _cfed879c = () => interopDefault(import('..\\pages\\inspire.vue' /* webpackChunkName: "pages_inspire" */))
+const _458bd0b1 = () => interopDefault(import('..\\pages\\admin\\users\\index.vue' /* webpackChunkName: "pages_admin_users_index" */))
+const _97246148 = () => interopDefault(import('..\\pages\\DetailsDispositionTable\\Detailtable.vue' /* webpackChunkName: "pages_DetailsDispositionTable_Detailtable" */))
+const _a532dcee = () => interopDefault(import('..\\pages\\DispositionPage\\disposition.vue' /* webpackChunkName: "pages_DispositionPage_disposition" */))
+const _0dea58b2 = () => interopDefault(import('..\\pages\\FormUser\\user.vue' /* webpackChunkName: "pages_FormUser_user" */))
+const _75f4a9c9 = () => interopDefault(import('..\\pages\\LoginPage\\login.vue' /* webpackChunkName: "pages_LoginPage_login" */))
+const _d2ef694e = () => interopDefault(import('..\\pages\\admin\\users\\_id.vue' /* webpackChunkName: "pages_admin_users__id" */))
+const _3312d5a8 = () => interopDefault(import('..\\pages\\admin\\_test\\index.vue' /* webpackChunkName: "pages_admin__test_index" */))
+const _b5abbbe0 = () => interopDefault(import('..\\pages\\admin\\_test\\_id.vue' /* webpackChunkName: "pages_admin__test__id" */))
+const _da63b3ac = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
 
@@ -86,31 +90,47 @@ export function createRouter() {
 
     routes: [{
       path: "/admin",
-      component: _665cd6f8,
+      component: _dbb51f0a,
       name: "admin"
     }, {
       path: "/inspire",
-      component: _967e08d6,
+      component: _cfed879c,
       name: "inspire"
     }, {
       path: "/admin/users",
-      component: _06489394,
+      component: _458bd0b1,
       name: "admin-users"
     }, {
+      path: "/DetailsDispositionTable/Detailtable",
+      component: _97246148,
+      name: "DetailsDispositionTable-Detailtable"
+    }, {
+      path: "/DispositionPage/disposition",
+      component: _a532dcee,
+      name: "DispositionPage-disposition"
+    }, {
+      path: "/FormUser/user",
+      component: _0dea58b2,
+      name: "FormUser-user"
+    }, {
+      path: "/LoginPage/login",
+      component: _75f4a9c9,
+      name: "LoginPage-login"
+    }, {
       path: "/admin/users/:id",
-      component: _9f632a08,
+      component: _d2ef694e,
       name: "admin-users-id"
     }, {
       path: "/admin/:test",
-      component: _1860ceea,
+      component: _3312d5a8,
       name: "admin-test"
     }, {
       path: "/admin/:test/:id",
-      component: _821f7c9a,
+      component: _b5abbbe0,
       name: "admin-test-id"
     }, {
       path: "/",
-      component: _a7b73b66,
+      component: _da63b3ac,
       name: "index"
     }],
 
